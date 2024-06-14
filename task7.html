@@ -1,0 +1,158 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0%;
+                background-color: rgb(218, 203, 232);
+            }
+            form{
+                justify-content: center;
+                align-items: center;
+                width: 400px;
+                background-color: aliceblue;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 10px;
+            }
+            table,
+            th,
+            td {
+                border: 1px rgb(242, 240, 240);
+            }
+            button{
+                justify-content: center;
+                align-items: center;
+                background-color: #cea1d3;
+                border-radius: 1000px;
+                box-sizing: content-box;
+                
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        
+        <form>
+            <fieldset>
+                <legend><b>Shiping Information</b></legend>
+                <label for="firstname" >First name </label>
+                <input type="text" placeholder="First name"><br>
+                <label for="Lastname" >Last name </label>
+                <input type="text" placeholder="Last name"><br>
+                <table style="width: 350px;">
+                    <tr>
+                        <td>
+                            <legend><b>Gender</b></legend>
+                            <label for="Gender"></label>
+                            <input type="radio" name="Gender">Male<br>
+                            <input type="radio" name="Gender">Female<br>
+                        </td>
+                        <td>
+                            
+                            <label ><b>Address<b></label>
+                            <textarea name="Adress"></textarea><br><br>
+                            <div class="center">
+                            <label for="State">State</label>
+                            <select name="State" >
+                            <option value="telangana">Telangana</option>
+                            <option value="telangana">Andhra pradesh</option>
+                            <option value="up">Uttar Pradesh</option>
+                            <option value="mp">Madhya pradesh</option>
+                            <option value="rajastan">Rajasthan</option>
+                            <option value="telangana">Tamil Nadu</option>
+                            <option value="telangana">Kerala</option>
+                            <option value="telangana">Karnataka</option>
+                            <option value="telangana">Odisha</option>
+                            <option value="telangana">Goa</option>
+                            </select>
+                            </div>
+                            
+                            <tr>    
+                                <td>
+                                    <legend><b>Email</b></legend>
+                                    <label for="email"></label>
+                                    <input type="email" id="email"><br>
+                                </td>
+                            </tr>
+                            
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>
+                            <legend><b>Phone Number</b></legend>
+                            <label for="Phno"></label>
+                            <input type="number" id="Phno"><br>
+                        </td>
+                    </tr>
+                </table>                           
+            </fieldset> 
+            <fieldset>
+                <legend><b>Payment Information</b></legend>
+                <label for="payment"><b>Payment Method</b></label>
+                <select name="payment">
+                <option value="card">Card</option>
+                <option value="COD"> COD</option>
+                <option value="UPI">UPI</option>
+                </select><br><br>
+               
+                <label for="card"><b>Card Type</b></label>
+                <select name="card">
+                    <option value="Credit card">Credit Card</option>
+                    <option value="Debit Card">Debit Card</option>
+                </select><br><br>
+                <label for="card numb"><b>Card Number</b></label>
+                <input type="number"><br><br>
+                <tr>
+                    <td>
+                        <label for="exp date"><b>Expiry Date</b></label><br>
+                        <tr>
+                            <td>
+                                <select name="month">
+                                    <option value="jan">jan</option>
+                                    <option value="feb">feb</option>
+                                    <option value="mar">mar</option>
+                                    <option value="apr">apr</option>
+                                    <option value="may">may</option>
+                                    <option value="jun">jun</option>
+                                    <option value="jul">jul</option>
+                                    <option value="aug">aug</option>
+                                    <option value="sep">sep</option>
+                                    <option value="oct">oct</option>
+                                    <option value="nov">nov</option>
+                                    <option value="dec">dec</option>
+                                </select>
+                                
+                            </td>
+                            <td>
+                                <select name="year">
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <label for="cv"><b>cv code</b></label>
+                        <input type="number">
+                    </td>
+                </tr>
+
+
+            </fieldset>
+            <button class="button"><b>Place Order<b></button> 
+        </form>
+    </body>
+</html>
